@@ -1,0 +1,103 @@
+{
+	"description": "Water Map Functionality",
+	"screenshots": [
+		{
+			"description": "Water module page",
+			"filename": "water.png",
+			"actions": [
+				{
+					"description": "Open water module",
+					"actionType": "click",
+					"itemToClickOn": ".icons-water",
+					"itemToWaitFor": ".icons-maps"
+				}
+			]
+		},
+		{
+			"description": "Water map with pipe list and property box open",
+			"filename": "water_map_grid_properties.png",
+			"actions": [
+				{
+					"description": "Open water map",
+					"actionType": "click",
+					"itemToClickOn": ".icons-maps",
+					"itemToWaitFor": ".leaflet-tile-loaded"
+				},
+				{
+					"description": "Zoom in on map",
+					"actionType": "click",
+					"itemToClickOn": ".leaflet-control-zoom-in",
+					"clickCount": 10
+				},
+				{
+					"description": "Open feature lists map tool",
+					"actionType": "click",
+					"itemToClickOn": "#maptool-feature-lists",
+					"itemToWaitFor": "#visible-feature-0"
+				},
+				{
+					"description": "Open first feature list",
+					"actionType": "click",
+					"itemToClickOn": "#visible-feature-0",
+					"itemToWaitFor": ".slick-cell.l0.r0"
+				},
+				{
+					"description": "Select first infrastucture item in list",
+					"actionType": "click",
+					"itemToClickOn": ".slick-cell.l0.r0",
+					"itemToWaitFor": ".slick-cell.l0.r0.active"
+				}
+			]
+		},
+		{
+			"description": "Water map with item selected on map and property box open",
+			"filename": "water_map_selected.png",
+			"actions": [
+				{
+					"description": "Close feature list",
+					"actionType": "click",
+					"itemToClickOn": "#infra-grid-close"
+				}
+			]
+		},
+		{
+			"description": "Water map with legend open",
+			"filename": "water_map.png",
+			"actions": [
+				{
+					"description": "Open map legend",
+					"actionType": "click",
+					"itemToClickOn": "#infra-tabs-btn-legend"
+				}
+			]
+		},
+		{
+			"description": "Water map with theme selection dropdown open",
+			"filename": "water_map_theme_selection.png",
+			"actions": [
+				{
+					"description": "Open map theme selection dropdown",
+					"actionType": "click",
+					"itemToClickOn": "#nav-breadcrumb-item-2-arrow"
+				}
+			]
+		},
+		{
+			"description": "Water map with map selection tool open",
+			"filename": "map_tool_select.png",
+			"actions": [
+				{
+					"description": "Close map theme selection dropdown",
+					"actionType": "click",
+					"itemToClickOn": "#nav-breadcrumb-item-2-arrow"
+				},
+				{
+					"description": "Open selection map tool",
+					"actionType": "click",
+					"itemToClickOn": "#maptool-selecttool",
+					"itemToWaitFor": "#maptool-selecttool-sub-maptoolbox"
+				}
+			]
+		}
+	]
+}

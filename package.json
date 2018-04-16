@@ -1,0 +1,19 @@
+{
+	"name": "screenshot",
+	"version": "1.0.0",
+	"description": "Creates screenshots for IMQS training material",
+	"main": "screenshot.js",
+	"scripts": {
+		"screenshot": "node screenshot.js",
+		"diff": "node diff.js"
+	},
+	"author": "IMQS",
+	"license": "ISC",
+	"dependencies": {
+		"mkdirp": "^0.5.1",
+		"pixelmatch": "^4.0.2",
+		"pngjs": "^3.3.2",
+		"puppeteer": "^1.1.1",
+		"rimraf": "^2.6.2"
+	}
+}

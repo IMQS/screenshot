@@ -1,0 +1,42 @@
+{
+	"description": "Login page",
+	"screenshots": [
+		{
+			"description": "Blank login screen",
+			"filename": "login.png",
+			"itemToScreenshot": "#login-frame",
+			"actions": []
+		},
+		{
+			"description": "Login screen with username and password filled out",
+			"filename": "login_filled.png",
+			"itemToScreenshot": "#login-frame",
+			"actions": [
+				{
+					"description": "Type in username",
+					"actionType": "type",
+					"itemToTypeIn": "#login-email",
+					"valueToType": "test.email@imqs.co.za"
+				},
+				{
+					"description": "Type in password",
+					"actionType": "type",
+					"itemToTypeIn": "#login-password",
+					"valueToType": "test.password"
+				}
+			]
+		},
+		{
+			"description": "Module page displaying all modules",
+			"filename": "modules.png",
+			"actions": [
+				{
+					"description": "Click on login button",
+					"actionType": "click",
+					"itemToClickOn": "#login-go",
+					"itemToWaitFor": ".icons-water"
+				}
+			]
+		}
+	]
+}
